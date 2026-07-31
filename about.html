@@ -1,0 +1,324 @@
+<!-- about.html — About RS9 Game -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About RS9 Game — India's Premier Skill Gaming Platform &amp; App</title>
+    <meta name="description" content="Learn about RS9 Game — India's leading skill-based gaming platform and app offering ₹10,000 bonus, 20+ games, referral rewards &amp; secure gameplay for Indian players.">
+    <link rel="canonical" href="https://rs9.in/about.html">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0A1628">
+    <meta property="og:title" content="About RS9 Game — India's Premier Skill Gaming Platform">
+    <meta property="og:description" content="RS9 Game is India's skill-based gaming destination with 20+ games and a ₹10,000 welcome bonus.">
+    <meta property="og:image" content="https://rs9.in/assets/images/og_banner.png">
+    <meta property="og:url" content="https://rs9.in/about.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "RS9 Game",
+            "url": "https://rs9.in",
+            "logo": "https://rs9.in/assets/images/logo.jpg",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "affiliate@rs9.in",
+                "contactType": "customer support"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <div class="agegate" id="age-gate" hidden role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
+        <div class="agegate__card">
+            <span class="agegate__logo"><img src="assets/images/logo.jpeg" alt="RS9 Game logo" width="56" height="56"><span class="brand__rs">RS9</span><span class="brand__game">GAME</span></span>
+            <h2 id="age-gate-title">You must be 18 or older to enter this site</h2>
+            <p class="text-muted">RS9 Game is a skill-based gaming platform intended for adults in India only.</p>
+            <p class="agegate__note">RS9 Game is restricted in: Andhra Pradesh, Assam, Odisha, Telangana, Nagaland, Sikkim. If you reside in these states, please exit.</p>
+            <div class="agegate__actions">
+                <button class="btn btn-primary btn-block btn-lg" data-age-enter>I am 18+ — Enter Site</button>
+                <button class="btn btn-ghost btn-block" data-age-exit>Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="nav">
+        <div class="container nav__inner">
+            <a href="index.html" class="brand" aria-label="RS9 Game — home"><img src="assets/images/logo.jpeg" alt="RS9 Game logo" width="34" height="34"><span class="brand__rs">RS9</span><span class="brand__game">GAME</span></a>
+            <nav class="nav__links" aria-label="Primary navigation">
+                <a class="nav__link" data-nav="index.html" href="index.html">Home</a>
+                <a class="nav__link nav__link--download" href="download.html#apk-download"><i class="bx bx-download"></i> Download</a>
+                <a class="nav__link" data-nav="download.html" href="download.html#all-games">Games</a>
+                <a class="nav__link" data-nav="blogs.html" href="blogs.html">Blog</a>
+                <a class="nav__link" data-nav="about.html" href="about.html">About</a>
+                <a class="nav__link" data-nav="contact.html" href="contact.html">Contact</a>
+            </nav>
+            <a href="download.html#apk-download" class="btn btn-primary nav__cta btn-pulse"><i class="bx bx-download"></i> Download Now</a>
+            <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <div class="nav__mobile" id="mobile-menu">
+            <a data-nav="index.html" href="index.html" style="--i:60ms">Home</a>
+            <a class="nav__link--download" href="download.html#apk-download" style="--i:120ms"><i class="bx bx-download"></i> Download</a>
+            <a data-nav="download.html" href="download.html#all-games" style="--i:180ms">Games</a>
+            <a data-nav="blogs.html" href="blogs.html" style="--i:240ms">Blog</a>
+            <a data-nav="about.html" href="about.html" style="--i:300ms">About</a>
+            <a data-nav="contact.html" href="contact.html" style="--i:360ms">Contact</a>
+            <a href="download.html#apk-download" class="btn btn-primary"><i class="bx bx-download"></i> Download Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>About</span></nav>
+                <h1>About RS9 Game</h1>
+                <p>India's premier skill-based gaming destination — built for players who value strategy, security and real rewards.</p>
+            </div>
+        </section>
+
+        <!-- Mission -->
+        <section class="section">
+            <div class="container">
+                <div class="bonus-grid" style="display:grid;gap:var(--space-12);align-items:center">
+                    <div class="reveal">
+                        <img src="assets/images/hero_img.png" alt="RS9 Game app interface" width="853" height="1844" loading="lazy" style="max-width:280px;margin:0 auto;border-radius:var(--radius-lg);border:1px solid var(--color-border)">
+                    </div>
+                    <div class="reveal" style="--delay:100ms">
+                        <span class="eyebrow">Our Mission</span>
+                        <h2>Skill Gaming, Done Right</h2>
+                        <p>RS9 Game is India's skill-based gaming destination, offering exciting card games, casual games and daily tournaments for Indian players aged 18 and above. As an independent affiliate and APK directory, we make it simple to discover,
+                            download the RS9 APK, create your RS9 account and get started with the RS9 mobile app in minutes.</p>
+                        <p>Our goal is straightforward: give Indian players a fast, secure and genuinely rewarding place to test their skill — whether that's reading the table in Teen Patti, building the perfect Rummy hand, or climbing the tournament leaderboard.</p>
+                        <div class="flex-cta mt-6">
+                            <a href="download.html" class="btn btn-primary btn-lg">Download RS9 Game Now</a>
+                            <a href="contact.html" class="btn btn-ghost btn-lg">Contact Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-bar">
+            <div class="container stats-bar__inner">
+                <div class="stat reveal">
+                    <div class="stat__num"><span data-count="12500" data-suffix="+">0</span></div>
+                    <div class="stat__label">Active Players</div>
+                </div>
+                <div class="stat reveal" style="--delay:80ms">
+                    <div class="stat__num"><span data-count="20" data-suffix="+">0</span></div>
+                    <div class="stat__label">Skill Games</div>
+                </div>
+                <div class="stat reveal" style="--delay:160ms">
+                    <div class="stat__num"><span class="text-accent" data-count="10000" data-prefix="₹">0</span></div>
+                    <div class="stat__label">Welcome Bonus</div>
+                </div>
+                <div class="stat reveal" style="--delay:240ms">
+                    <div class="stat__num">4.7★</div>
+                    <div class="stat__label">Player Rating</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why RS9 -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Why RS9</span>
+                    <h2>Why Players Choose RS9 Game</h2>
+                </div>
+                <div class="grid grid-3">
+                    <article class="card reveal">
+                        <div class="card__icon">🎯</div>
+                        <h3>Skill First</h3>
+                        <p>Games that reward strategy and practice — not blind luck.</p>
+                    </article>
+                    <article class="card reveal" style="--delay:80ms">
+                        <div class="card__icon">🔒</div>
+                        <h3>Secure &amp; Fair</h3>
+                        <p>SSL encryption and RNG-certified fairness on every table.</p>
+                    </article>
+                    <article class="card reveal" style="--delay:160ms">
+                        <div class="card__icon">⚡</div>
+                        <h3>Instant Payouts</h3>
+                        <p>Fast UPI and IMPS withdrawals, processed 24/7.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- RS9 vs Other Apps -->
+        <section class="section bg-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">How We Compare</span>
+                    <h2>RS9 Game vs Other Gaming Apps</h2>
+                    <p>What sets the RS9 gaming platform apart from other mobile game apps and APK directories.</p>
+                </div>
+                <div class="grid grid-3">
+                    <article class="card reveal">
+                        <div class="card__icon">📦</div>
+                        <h3>Lightweight APK</h3>
+                        <p>A ~25MB, low-storage APK versus the bulky 100MB+ installs common on many competitor apps.</p>
+                    </article>
+                    <article class="card reveal" style="--delay:80ms">
+                        <div class="card__icon">💸</div>
+                        <h3>Bigger Welcome Bonus</h3>
+                        <p>₹10,000 welcome bonus plus daily rewards and referral earnings — among the highest in the category.</p>
+                    </article>
+                    <article class="card reveal" style="--delay:160ms">
+                        <div class="card__icon">🗂️</div>
+                        <h3>One App, 20+ Games</h3>
+                        <p>Teen Patti, Rummy, Poker, slots, fishing and instant games in a single RS9 app instead of juggling multiple downloads.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community & Reviews -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Player Community</span>
+                    <h2>RS9 Game Community &amp; Player Reviews</h2>
+                    <p>Join 12,500+ Indian players rating RS9 Game 4.7★ for gameplay, payouts and support.</p>
+                </div>
+                <div class="grid grid-3">
+                    <article class="card reveal">
+                        <div class="card__icon">⭐</div>
+                        <h3>Verified Player Ratings</h3>
+                        <p>Thousands of RS9 Game reviews cite fast withdrawals and a smooth, lag-free gaming experience.</p>
+                    </article>
+                    <article class="card reveal" style="--delay:80ms">
+                        <div class="card__icon">🤝</div>
+                        <h3>Active Referral Community</h3>
+                        <p>Players regularly refer friends using their RS9 referral code to earn extra rewards together.</p>
+                    </article>
+                    <article class="card reveal" style="--delay:160ms">
+                        <div class="card__icon">📢</div>
+                        <h3>Player Testimonials</h3>
+                        <p>From first bonus claims to VIP milestones, the RS9 community shares real success stories on our <a href="blogs.html" class="text-accent">blog</a>.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal framing -->
+        <section class="section bg-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Legal Framing</span>
+                    <h2>Skill Games &amp; Indian Law</h2>
+                </div>
+                <div style="max-width:760px;margin:0 auto">
+                    <p class="reveal" style="text-align:center">RS9 Game operates as a skill-based gaming platform. Under Indian law, games of skill are exempt from gambling legislation in most states, as they depend on a player's knowledge, judgement and practice rather than pure chance. Players
+                        must be 18+ and are responsible for ensuring skill gaming is permitted in their state. RS9 Game is not available in Andhra Pradesh, Assam, Odisha, Telangana, Nagaland or Sikkim.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="section">
+            <div class="container">
+                <div class="disclaimer-strip reveal">
+                    <i class="bx bx-error-circle"></i>
+                    <p>RS9 Game involves skill-based gaming. It is not available in Andhra Pradesh, Assam, Odisha, Telangana, Nagaland, and Sikkim. This website is an independent affiliate review and APK directory site. यह RS9 की Official Website नहीं है।
+                        18+ only. Please play responsibly.</p>
+                </div>
+                <div class="cta-card reveal mt-8">
+                    <h3>Join RS9 Game Today</h3>
+                    <p>Download the app, register in 30 seconds and claim your ₹10,000 welcome bonus.</p>
+                    <a href="download.html" class="btn btn-primary btn-lg btn-pulse"><i class="bx bx-download"></i> Download RS9 Game</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <span class="footer__brand-logo"><img src="assets/images/logo.jpeg" alt="RS9 Game logo" width="34" height="34"><span class="brand__rs">RS9</span><span class="brand__game">GAME</span></span>
+                    <p class="footer__tagline">India's Most Trusted Gaming Platform</p>
+                    <div class="footer__social">
+                        <a href="https://t.me/bbxxyyz" aria-label="Telegram — contact and collabs" target="_blank" rel="noopener"><i class="bx bxl-telegram"></i></a>
+                        <a href="https://urlr.io/rs9" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://urlr.io/rs9" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+                        <a href="https://urlr.io/rs9" aria-label="Twitter / X"><i class="bx bxl-twitter"></i></a>
+                    </div>
+                    <span class="badge badge-outline">18+ | Skill Game Only</span>
+                </div>
+                <div class="footer__col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="terms.html#disclaimer">Disclaimer</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact</h4>
+                    <ul class="footer__contact">
+                        <li><i class="bx bx-envelope"></i> affiliate@rs9.in</li>
+                        <li><i class="bx bx-globe"></i> rs9.in</li>
+                        <li><i class="bx bx-time"></i> Support: 10AM – 8PM IST</li>
+                    </ul>
+                    <span class="restricted-badge">🚫 Not available in AP, Assam, Odisha, TG, Nagaland, Sikkim</span>
+                </div>
+            </div>
+            <div class="footer__disclaimer">
+                <strong>Disclaimer:</strong> RS9 Game is a skill-based gaming platform. This website is an independent affiliate/APK review site and is NOT the official RS9 app or company. यह RS9 की Official Website नहीं है। 18+ only. Not available in:
+                Andhra Pradesh, Assam, Odisha, Telangana, Nagaland, Sikkim. Play responsibly.
+                <br><br>
+                <strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission when you register via our links at no extra cost to you.
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2025 RS9 Game. All rights reserved.</p>
+                <p>This is an independent affiliate review site. Not the official RS9 app.</p>
+                <p>Play responsibly. 18+ only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie" role="region" aria-label="Cookie notice">
+        <p>We use cookies to improve your experience and for affiliate tracking. By using rs9.in you agree to our <a href="privacy-policy.html" class="text-accent">Privacy Policy</a>.</p>
+        <div class="cookie__actions">
+            <button class="btn btn-primary" data-cookie>Accept All</button>
+            <a class="btn btn-ghost" href="privacy-policy.html">Manage</a>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/components/age-gate.js"></script>
+    <script src="assets/js/components/accordion.js"></script>
+</body>
+
+</html>

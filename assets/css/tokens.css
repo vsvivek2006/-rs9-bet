@@ -1,0 +1,88 @@
+/* ============================================================
+   RS9 GAME — tokens.css
+   Design system variables — "Sapphire Elite"
+   ============================================================ */
+
+:root {
+    /* Colors */
+    --color-bg: #0A1628;
+    --color-bg-2: #0E1E36;
+    --color-surface: #142A4A;
+    --color-surface-2: #1C3760;
+    --color-accent: #0066FF;
+    /* Electric Blue — primary CTA */
+    --color-accent-dark: #0047B3;
+    /* Hover state */
+    --color-accent-light: #3D8BFF;
+    /* Glow / highlight */
+    --color-gold: #F5C451;
+    /* Bonus / prize accent */
+    --color-white: #FFFFFF;
+    --color-white-70: rgba(255, 255, 255, 0.70);
+    --color-white-30: rgba(255, 255, 255, 0.30);
+    --color-white-10: rgba(255, 255, 255, 0.10);
+    --color-text: #F5F5F5;
+    --color-text-muted: #A8BBD6;
+    --color-border: rgba(0, 102, 255, 0.25);
+    --color-border-white: rgba(255, 255, 255, 0.10);
+    --color-glow-red: rgba(61, 139, 255, 0.45);
+    --color-glow-white: rgba(255, 255, 255, 0.08);
+    --color-amber: #FFB020;
+    --color-amber-bg: rgba(255, 176, 32, 0.08);
+    /* Typography */
+    --font-display: 'Rajdhani', 'Bebas Neue', sans-serif;
+    --font-body: 'Inter', 'DM Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    /* Type scale */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 4rem;
+    --text-hero: clamp(3rem, 8vw, 6rem);
+    /* Spacing (4px base) */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+    /* Border radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+    --radius-pill: 9999px;
+    /* Shadows */
+    --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 30px var(--color-glow-red), 0 0 60px rgba(0, 102, 255, 0.15);
+    --shadow-glow-sm: 0 0 12px var(--color-glow-red);
+    --shadow-white: 0 0 20px var(--color-glow-white);
+    /* Z-index */
+    --z-base: 1;
+    --z-card: 10;
+    --z-nav: 100;
+    --z-modal: 200;
+    --z-toast: 300;
+    --z-agegate: 500;
+    /* Transitions */
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --duration-fast: 150ms;
+    --duration-base: 300ms;
+    --duration-slow: 600ms;
+    /* Layout */
+    --container: 1200px;
+    --container-wide: 1360px;
+    --nav-height: 72px;
+}

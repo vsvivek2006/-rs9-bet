@@ -1,0 +1,274 @@
+/* ============================================================
+   RS9 GAME — download.css  (games / APK page)
+   ============================================================ */
+
+/* APK info strip */
+
+.apk-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+}
+
+.apk-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-white);
+    border-radius: var(--radius-pill);
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    color: var(--color-white-70);
+}
+
+.apk-chip i {
+    color: var(--color-accent);
+}
+
+/* Big APK download card */
+
+.apk-card {
+    background: linear-gradient(135deg, #123566 0%, #0C2244 60%, #0E1E36 100%);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-glow);
+    padding: var(--space-8);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+}
+
+.apk-card__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 700;
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-4);
+}
+
+.apk-card__logo img {
+    height: 56px;
+    width: 56px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.apk-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.apk-table td {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border-white);
+    font-size: var(--text-sm);
+}
+
+.apk-table td:first-child {
+    color: var(--color-text-muted);
+    font-family: var(--font-display);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 40%;
+}
+
+.apk-table td:last-child {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.apk-card__cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-4);
+}
+
+.apk-steps-mini {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.apk-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+
+.apk-badges span {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-xs);
+    color: var(--color-white-70);
+}
+
+.apk-badges i {
+    color: #2ecc71;
+}
+
+@media (min-width: 768px) {
+    .apk-card {
+        grid-template-columns: 1.2fr 1fr;
+    }
+}
+
+/* Filter tabs */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-10);
+}
+
+.filter-btn {
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: var(--space-2) var(--space-5);
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--color-border-white);
+    color: var(--color-white-70);
+    transition: all var(--duration-fast);
+}
+
+.filter-btn:hover {
+    border-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.filter-btn.active {
+    background: var(--color-accent);
+    color: #fff;
+    border-color: var(--color-accent);
+}
+
+/* (Games grid + .g-card component moved to main.css — shared across pages) */
+
+/* Install steps */
+
+.install-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+}
+
+.install-step {
+    text-align: center;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8) var(--space-6);
+}
+
+.install-step__circle {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--space-4);
+    border-radius: 50%;
+    background: rgba(0, 102, 255, 0.1);
+    border: 1px solid var(--color-accent);
+    display: grid;
+    place-items: center;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-3xl);
+    color: var(--color-accent);
+}
+
+.install-step h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+}
+
+.install-step p {
+    font-size: var(--text-sm);
+}
+
+@media (min-width: 768px) {
+    .install-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Screenshots gallery */
+
+.shots-row {
+    display: flex;
+    gap: var(--space-4);
+    overflow-x: auto;
+    padding-bottom: var(--space-4);
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) transparent;
+}
+
+.shots-row::-webkit-scrollbar {
+    height: 6px;
+}
+
+.shots-row::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: var(--radius-pill);
+}
+
+.shot {
+    flex: 0 0 200px;
+    scroll-snap-align: start;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--color-border-white);
+    box-shadow: var(--shadow-card);
+}
+
+.shot img {
+    width: 100%;
+    aspect-ratio: 9 / 19.5;
+    object-fit: cover;
+}
+
+/* System requirements table */
+
+.req-table {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.req-table td {
+    padding: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--color-border-white);
+    font-size: var(--text-sm);
+}
+
+.req-table tr:last-child td {
+    border-bottom: none;
+}
+
+.req-table td:first-child {
+    font-family: var(--font-display);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    width: 40%;
+}
+
+.req-table td:last-child {
+    color: var(--color-white-70);
+}
