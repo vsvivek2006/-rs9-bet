@@ -433,6 +433,43 @@
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/components/age-gate.js"></script>
     <script src="assets/js/components/accordion.js"></script>
+    
+    <!-- ===== OVERRIDE DYNAMIC GAME LINKS SCRIPT ===== -->
+    <script>
+        // 1. Observer to modify standard generated hrefs dynamically on load so tooltips are correct
+        document.addEventListener('DOMContentLoaded', () => {
+            const gameContainers = document.querySelectorAll('#all-games, [data-games="all"]');
+            const targetAffiliateLink = 'https://rs9-in.rs9uniors.com/en/affiliate-invited?c=WWWXXFWSKW&s=3';
+            
+            const observer = new MutationObserver(() => {
+                gameContainers.forEach(container => {
+                    container.querySelectorAll('a').forEach(link => {
+                        if (link.href !== targetAffiliateLink) {
+                            link.href = targetAffiliateLink;
+                        }
+                    });
+                });
+            });
+
+            gameContainers.forEach(container => {
+                if(container) {
+                    observer.observe(container, { childList: true, subtree: true });
+                }
+            });
+        });
+
+        // 2. Click interceptor to strictly force the redirection for any clicks inside the game sections
+        document.addEventListener('click', function(e) {
+            const clickedGameSection = e.target.closest('#all-games, [data-games="all"]');
+            
+            // Trigger if the click occurred on a child element of the game sections (i.e. the game card itself)
+            if (clickedGameSection && e.target !== clickedGameSection) {
+                e.preventDefault();
+                e.stopPropagation();
+                window.location.href = 'https://rs9-in.rs9uniors.com/en/affiliate-invited?c=WWWXXFWSKW&s=3';
+            }
+        }, true);
+    </script>
 </body>
 
 </html>
