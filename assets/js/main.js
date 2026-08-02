@@ -7,11 +7,11 @@
 (function() {
     'use strict';
 
-    var DOWNLOAD_LINKS = [
-        'https://www.t1share.com/share/agent/SA0YBXNJ',
+   var DOWNLOAD_LINKS = [
         'https://rs9-in.rs9uniors.com/en/affiliate-invited?c=WWWXXFWSKW&s=3',
-        'https://aagame.chat/?code=K0VNK3Z',
-        'https://77game.com.in/?code=B9D70QZ'
+        'https://rs9-in.rs9uniors.com/en/affiliate-invited?c=WWWXXFWSKW&s=3',
+        // 'https://aagame.chat/?code=K0VNK3Z',
+        // 'https://77game.com.in/?code=B9D70QZ'
     ];
 
     function randomDownloadLink() {
