@@ -90,7 +90,7 @@ window.RS9_GAMES = [{
         "slug": "lions-hoard",
         "name": "Lion's Hoard",
         "category": "slots",
-        "img": "assets/images/games/Lion's_Hoard.png"
+        "img": "assets/images/games/Lions_Hoard.png"
     },
     {
         "slug": "lucky-fuwa",
